@@ -1,0 +1,9 @@
+{
+    "keyboard_name": "Dactyl-Manuform (5x6)",
+    "manufacturer": "tshort",
+    "url": "",
+    "maintainer": "qmk",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "usb": { "vid": "0x444D", "pid": "0x3536", "device_version": "0.0.1" },
+}
