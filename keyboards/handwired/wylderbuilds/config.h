@@ -13,11 +13,13 @@
 #define DEBOUNCE 5
 
 /* serial.c configuration for split keyboard */
-//#define SOFT_SERIAL_PIN
-#define SERIAL_USART_TX_PIN GP0
-#define SERIAL_USART_RX_PIN GP1
 
-#define SERIAL_USART_FULL_DUPLEX 
+// PINS ARE DEFINED IN SUBDIRECTORIES.
+//#define SOFT_SERIAL_PIN
+//#define SERIAL_USART_TX_PIN GP0
+//#define SERIAL_USART_RX_PIN GP1
+
+//#define SERIAL_USART_FULL_DUPLEX
 #define HAL_USE_SIO TRUE
 
 //#define split_usb_detect 
