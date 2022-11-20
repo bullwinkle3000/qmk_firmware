@@ -3,6 +3,8 @@
 
 #include "config_common.h"
 
+#define PRODUCT_ID 0x0003
+
 // Basic Config
 #define SPLIT_HAND_PIN      GP26  // high = left, low = right
 
@@ -25,6 +27,13 @@
 #define RP2040_FLASH_W25X10CL
 #define RP2040_FLASH_IS25LP080
 #define RP2040_FLASH_GENERIC_03H
+
+// Bootmagic keys
+#define BOOTMAGIC_LITE_ROW 0           // Esc key on left side
+#define BOOTMAGIC_LITE_COLUMN 0
+#define BOOTMAGIC_LITE_ROW_RIGHT 5     // P key on right side
+#define BOOTMAGIC_LITE_COLUMN_RIGHT 4
+
 
 /* key matrix size */
 // Rows are doubled-up

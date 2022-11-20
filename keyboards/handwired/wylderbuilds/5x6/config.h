@@ -4,6 +4,8 @@
 #include "config_common.h"
 // Basic Config
 
+#define PRODUCT_ID 0x0001
+
 #define SPLIT_HAND_PIN      GP26  // high = left, low = right
 
 // Using Serial instead of I2C
