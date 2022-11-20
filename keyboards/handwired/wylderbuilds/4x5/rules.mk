@@ -10,7 +10,8 @@ OLED_DRIVER = SSD1306
 OLED_DRIVER = no
 # Needed for OLED setup
 WPM_ENABLE = no
-VIA_ENABLE = yes
+
+# VIA_ENABLE = yes   # not yet
 # RGB Light
 RGBLIGHT_ENABLE = no
 
