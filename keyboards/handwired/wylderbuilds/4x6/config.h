@@ -3,7 +3,7 @@
 
 #include "config_common.h"
 
-#define PRODUCT_ID 0x0002
+//#define PRODUCT_ID 0x0003
 
 // Basic Config
 #define SPLIT_HAND_PIN      GP26  // high = left, low = right

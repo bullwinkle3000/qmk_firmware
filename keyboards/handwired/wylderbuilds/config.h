@@ -3,7 +3,7 @@
 #include "config_common.h"
 
 
-#define VENDOR_ID 0x9953 // keypad WYLD
+//#define VENDOR_ID 0x9953 // keypad WYLD
 
 /* mouse config */
 #define MOUSEKEY_INTERVAL    20

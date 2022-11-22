@@ -1,6 +1,7 @@
 //
 // Created by nethe on 11/9/2022.
 //
+//#define PRODUCT_ID 0x0001
 
 #ifndef WYLD_QMK_FIRMWARE_CONFIG_H
 #define WYLD_QMK_FIRMWARE_CONFIG_H
@@ -15,8 +16,8 @@
 
 #define SPLIT_HAND_PIN      GP26  // high = left, low = right
 
-#define VENDOR_ID 0x444d
-#define PRODUCT_ID 0x3536
+//#define VENDOR_ID 0x444d
+//#define PRODUCT_ID 0x3536
 
 // Using Serial instead of I2C
 #define SERIAL_USART_FULL_DUPLEX
