@@ -34,19 +34,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *        '-------------+------,                                ,------|-------------'
      *                      | ESC  |                                | BSPC |
      *                      |-------------,                  ,------+------|
-     *                      | GUI  |  TAB |                  | SHIFT| SPACE|
+     *                      | TAB  |  GUI |                  | SHIFT| SPACE|
      *                      |------+------|                  |------+------|
-     *                      | RAISE| CTRL |                  | LOWER| ENTER|
+     *                      | CTRL | RAISE|                  | LOWER| ENTER|
      *                      '-------------'                  '-------------'
      */
     [_BASE] = LAYOUT(
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,             KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,             KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
-        KC_LBRC, KC_RBRC,                                              KC_QUOT, KC_GRV,
-        KC_ESC,                            KC_BSPC,
-        KC_LGUI, KC_TAB,          KC_RSFT, KC_SPC,
-        RAISE,   KC_LCTRL,        LOWER,  KC_ENT
+                 KC_LBRC, KC_RBRC,                                              KC_QUOT, KC_GRV,
+                                      SFT_ESC,                       KC_BSPC,
+                                      KC_TAB, KC_LGUI,       KC_RSFT, KC_SPC,
+                                      KC_LCTRL, RAISE,       LOWER,   KC_ENT
         ),
 
     /*  RAISE
@@ -59,11 +59,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+-------------|                  |------+------+------+------+------,
      *        |      |      |                                              |   0  |   .  |
      *        '-------------+------,                                ,------|-------------'
-     *                      | ESC  |                                | BSPC |
+     *                      | QK_BOOT  |                            | BSPC |
      *                      |-------------,                  ,------+------|
      *                      | GUI  |  TAB |                  | SHIFT| SPACE|
      *                      |------+------|                  |------+------|
-     *                      | RAISE| CTRL |                  | LOWER| ENTER|
+     *                      | CTRL | RAISE|                  | LOWER| ENTER|
      *                      '-------------'                  '-------------'
      */
     [_RAISE] = LAYOUT(
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         S(KC_9), S(KC_0), KC_LCBR, KC_RCBR,  KC_EQL,            KC_MINS,  KC_4,    KC_5,    KC_6, KC_QUOT,
         QK_RBT, QK_BOOT, KC_LBRC, KC_RBRC,    ____,             ____,    KC_1,    KC_2,    KC_3,    ____,
         ____,    ____,                                                 KC_0,  KC_DOT,
-        ____,                               QK_BOOT,
+        QK_BOOT,                            ____,
         ____,    ____,             ____,    ____,
         ____,    ____,             ____,    ____
         ),
@@ -84,13 +84,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------|                  |------+------+------+------+------|
      * |      |      |      |      |      |                  |      | LEFT | DOWN |  UP  | RIGHT|
      * |------+------+------+-------------|                  |------+------+------+------+------,
-     *        |      |      |                                              |QWERTY|COLEMA|
+     *        |      |      |                                              |      |      |
      *        '-------------+------,                                ,------|-------------'
-     *                      | ESC  |                                | BSPC |
+     *                      | ESC  |                                | QK_BOOT |
      *                      |-------------,                  ,------+------|
      *                      | GUI  |  TAB |                  | SHIFT| SPACE|
      *                      |------+------|                  |------+------|
-     *                      | RAISE| CTRL |                  | LOWER| ENTER|
+     *                      | CTRL | RAISE|                  | LOWER| ENTER|
      *                      '-------------'                  '-------------'
      */
     [_LOWER] = LAYOUT(
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         S(KC_9), S(KC_0), KC_LBRC, KC_RBRC,  KC_EQL,               ____, KC_MINS,  KC_EQL, KC_PIPE,    ____,
         ____,    ____,    ____,    ____,    ____,               ____, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT,
         ____,    ____,                                              ____, ____,
-        QK_BOOT,                            ____,
+        ____,                             QK_BOOT,
         ____,    ____,             ____,    ____,
         ____,    ____,             ____,    ____
         )
