@@ -2,8 +2,8 @@
 #include "config_common.h"
 
 // Vendor IDs
-#define VENDOR_ID 0x444D
-#define PRODUCT_ID 0x3536
+//#define VENDOR_ID 0x444D
+//#define PRODUCT_ID 0x3536
 // Saving coding space
 // #undef NO_DEBUG
 // #define NO_DEBUG
@@ -24,13 +24,6 @@
 // Leader Settings
 // #define USE_SERIAL
 // #define MASTER_RIGHT
-// key matrix size // Rows are doubled-up
-#define MATRIX_ROWS 12
-#define MATRIX_COLS 6
-// Wiring of each half
-#define MATRIX_COL_PINS { GP3, GP4, GP5, GP6, GP7, GP8 }
-#define MATRIX_ROW_PINS { GP10, GP11, GP12, GP13, GP14, GP15 }
-#define DIODE_DIRECTION COL2ROW
 // WS2812 RGB LED strip input and number of LEDs
 //#define RGB_DI_PIN D3
 //#define RGBLED_NUM 12
