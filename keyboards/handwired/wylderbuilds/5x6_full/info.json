@@ -1,0 +1,9 @@
+{
+    "keyboard_name": "Dactyl-Manuform (5x6-Full)",
+    "manufacturer": "wylderbuilds",
+    "url": "https://wylderbuilds.com",
+    "maintainer": "qmk",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "usb": { "vid": "0x9953", "pid": "0x0008", "device_version": "0.0.1" }
+}
