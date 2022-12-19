@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = LAYOUT_5x6(
           KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                        KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
-          _______,_______,_______,_______,_______,KC_LBRC,                        KC_RBRC,_______,KC_NLCK,KC_INS ,KC_SLCK,KC_MUTE,
+          _______,_______,_______,_____ wwwww__,_______,KC_LBRC,                        KC_RBRC,_______,KC_NLCK,KC_INS ,KC_SLCK,KC_MUTE,
           _______,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,KC_LPRN,                        KC_RPRN,KC_MPRV,KC_MPLY,KC_MNXT,_______,KC_VOLU,
           _______,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,KC_VOLD,
                           _______,_______,                                                        KC_EQL ,_______,
@@ -47,10 +47,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-void keyboard_post_init_user(void) {
-    // Customise these values to desired behaviour
-    debug_enable=true;
-    debug_matrix=true;
-    debug_keyboard=true;
-    debug_mouse=true;
-}
+//void keyboard_post_init_user(void) {
+//    // Customise these values to desired behaviour
+//    debug_enable=true;
+//    debug_matrix=true;
+//    debug_keyboard=true;
+//    debug_mouse=true;
+//}
