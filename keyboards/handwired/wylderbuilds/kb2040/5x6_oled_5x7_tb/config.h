@@ -8,7 +8,9 @@
 
 #define USE_SERIAL
 //#define SPLIT_HAND_PIN      GP29  // high = left, low = right
-#define SPLIT_HAND_MATRIX_GRID GP9, GP8
+//#define SPLIT_HAND_MATRIX_GRID GP9, GP8
+//#define MASTER_RIGHT
+#define MASTER_LEFT
 
 // Using Serial instead of I2C
 #define SERIAL_USART_FULL_DUPLEX 
@@ -24,20 +26,27 @@
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED_MASK 0U
 
 /* key matrix size */
-// Rows are doubled-up
+// Columns are doubled-up
 #define MATRIX_ROWS 12
 #define MATRIX_COLS 7
 
-#define MATRIX_COL_PINS { GP2, GP3, GP4, GP5, GP6, GP7, GP8 }
+// TEMP TRY THIS
+#define MATRIX_COL_PINS { GP2, GP3, GP4, GP5, GP6, GP7, GP8  }
 #define MATRIX_ROW_PINS { GP9, GP29, GP28, GP27, GP26, GP10 }
+
+//#define MATRIX_COL_PINS { GP2, GP3, GP4, GP5, GP6, GP7 }
+//#define MATRIX_ROW_PINS { GP9, GP29, GP28, GP27, GP26, GP10 }
+//#define MATRIX_COL_PINS_RIGHT { GP2, GP3, GP4, GP5, GP6, GP7, GP8 }
+//#define MATRIX_ROW_PINS_RIGHT { GP9, GP29, GP28, GP27, GP26, GP10 }
+
 #define DIODE_DIRECTION ROW2COL
 
-#define SPLIT_POINTING_ENABLE
-#define ROTATIONAL_TRANSFORM_ANGLE  -25
-#define POINTING_DEVICE_INVERT_Y
-#define POINTING_DEVICE_RIGHT
-#define PMW33XX_CS_PIN GP17
-#define POINTING_DEVICE_TASK_THROTTLE_MS 1
+//#define SPLIT_POINTING_ENABLE
+//#define ROTATIONAL_TRANSFORM_ANGLE  -25
+//#define POINTING_DEVICE_INVERT_Y
+//#define POINTING_DEVICE_RIGHT
+//#define PMW33XX_CS_PIN GP17
+//#define POINTING_DEVICE_TASK_THROTTLE_MS 1
 
 //// Sensor Notes ////
 //// Pi Pico pins ////
@@ -49,35 +58,35 @@
 // GND  -- GND
 
 // WS2812 RGB LED strip input and number of LEDs
-#ifdef RGBLIGHT_ENABLE
-#define RGB_DI_PIN GP17
-#define RGBLED_NUM 34
-//#define DRIVER_LED_TOTAL 34
-#define RGBLED_SPLIT { 17, 17 }
-#define STM32_SYSCLK KINETIS_SYSCLK_FREQUENCY
-#define NOP_FUDGE 0.4
-#endif
+//#ifdef RGBLIGHT_ENABLE
+//#define RGB_DI_PIN GP17
+//#define RGBLED_NUM 34
+////#define DRIVER_LED_TOTAL 34
+//#define RGBLED_SPLIT { 17, 17 }
+//#define STM32_SYSCLK KINETIS_SYSCLK_FREQUENCY
+//#define NOP_FUDGE 0.4
+//#endif
 
-#define SPLIT_OLED_ENABLE
-#define SPLIT_MODS_ENABLE
-// OLED Pins and Driver
-#ifdef OLED_ENABLE
-#define I2C_DRIVER I2CD2
-#define I2C1_SDA_PIN GP12
-#define I2C1_SCL_PIN GP13
-// OLED Options
-#define SPLIT_OLED_ENABLE
-#define SPLIT_WPM_ENABLE
-#define OLED_DISPLAY_WIDTH 128
-#define OLED_DISPLAY_HEIGHT 32
-#define OLED_MATRIX_SIZE 512
-#define OLED_RESET -1
-#define OLED_DISPLAY_ADDRESS 0x3C
-#define OLED_BRIGHTNESS 255
-#define OLED_TIMEOUT 32000
-#define OLED_FADE_OUT
-#define OLED_FADE_OUT_INTERVAL 0
-#endif
+//#define SPLIT_OLED_ENABLE
+//#define SPLIT_MODS_ENABLE
+//// OLED Pins and Driver
+//#ifdef OLED_ENABLE
+//#define I2C_DRIVER I2CD2
+//#define I2C1_SDA_PIN GP12
+//#define I2C1_SCL_PIN GP13
+//// OLED Options
+//#define SPLIT_OLED_ENABLE
+//#define SPLIT_WPM_ENABLE
+//#define OLED_DISPLAY_WIDTH 128
+//#define OLED_DISPLAY_HEIGHT 32
+//#define OLED_MATRIX_SIZE 512
+//#define OLED_RESET -1
+//#define OLED_DISPLAY_ADDRESS 0x3C
+//#define OLED_BRIGHTNESS 255
+//#define OLED_TIMEOUT 32000
+//#define OLED_FADE_OUT
+//#define OLED_FADE_OUT_INTERVAL 0
+//#endif
 
 // Misc settings
 // Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap

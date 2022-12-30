@@ -1,9 +1,9 @@
 {
-    "keyboard_name": "Dactyl-Manuform Wyld Trackball (5x3)",
+    "keyboard_name": "Dactyl-Manuform Wyld Trackball (5x7)",
     "manufacturer": "wylderbuilds",
     "url": "https://wylderbuilds.com",
     "maintainer": "qmk",
-    "bootloader": "rp2040",
+//    "bootloader": "rp2040",
     "processor": "RP2040",
-    "usb": { "vid": "0x9953", "pid": "0x0010", "device_version": "0.0.1" }
+    "usb": { "vid": "0x9953", "pid": "0x0013", "device_version": "0.0.1" }
 }
