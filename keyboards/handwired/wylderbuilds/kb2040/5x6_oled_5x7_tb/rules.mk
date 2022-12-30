@@ -6,11 +6,11 @@ F_CPU = 8000000
 SPLIT_KEYBOARD = yes
 
 # Drivers for components
-OLED_ENABLE = no
+OLED_ENABLE = yes
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 NKRO_ENABLE = yes           # Enable N-Key Rollover
-#OLED_DRIVER = SSD1306
+OLED_DRIVER = SSD1306
 #OLED_DRIVER = no
 # Needed for OLED setup
 WPM_ENABLE = yes
@@ -23,5 +23,5 @@ CONSOLE_ENABLE = yes
 #MOUSE_SHARED_EP = yes
 
 # Opt defs, comment out you're if not using OLED screen for the dactyl_manuform.
-#OPT_DEFS += -DHAL_USE_I2C=TRUE
+OPT_DEFS += -DHAL_USE_I2C=TRUE
 
