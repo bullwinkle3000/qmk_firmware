@@ -11,7 +11,7 @@
 #define	SPLIT_HAND_PIN_LOW_IS_LEFT
 //#define SPLIT_HAND_MATRIX_GRID GP9, GP8
 //#define MASTER_RIGHT
-#define MASTER_LEFT
+//#define MASTER_LEFT
 
 // Using Serial instead of I2C
 #define SERIAL_USART_FULL_DUPLEX 
