@@ -22,6 +22,8 @@ POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = pmw3360
 MOUSE_SHARED_EP = yes
 
+VIA_ENABLE = yes
+
 # Opt defs, comment out you're if not using OLED screen for the dactyl_manuform.
 OPT_DEFS += -DHAL_USE_I2C=TRUE
 
