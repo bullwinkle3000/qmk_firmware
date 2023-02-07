@@ -12,6 +12,11 @@ OLED_DRIVER = no
 WPM_ENABLE = no
 # RGB Light
 RGBLIGHT_ENABLE = no
+CONSOLE_ENABLE = no
+
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = pmw3360
+MOUSE_SHARED_EP = yes
 
 # Opt defs, comment out you're if not using OLED screen for the dactyl_manuform.
 OPT_DEFS += -DHAL_USE_I2C=TRUE
